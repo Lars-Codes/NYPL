@@ -1,4 +1,5 @@
 /myenv/
 test.ipynb
 .env
-/__pychache__/
+__pychache__/
+__pycache__/endpoints.cpython-313.pyc

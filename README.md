@@ -99,6 +99,7 @@ pip install requirements.txt
 APP_TOKEN="JkBpJ9IDVBgTg6AxU4diKwoqT"
 USERNAME="your_email@email.com"
 PASSWORD="your_password"
+DATA_DUMP_DIR="./directory_to_put_csv_dummp"
 ```
 
 4. See transform_data.ipynb and choose which data transformation you'd like to run
