@@ -1,0 +1,4 @@
+CLIENT_IDENTIFIER="data.cityofnewyork.us"
+
+SQUIRREL_DATASET_IDENTIFIER="vfnx-vebw"
+TREE_CENSUS_DATASET_IDENTIFIER="uvpi-gqnh"
