@@ -1,5 +1,11 @@
 # NYC Squirrel Census ETL Pipeline
 
+## Assessment note
+The main code for this project can be found in [transform_data.ipynb](https://github.com/Lars-Codes/NYPL/blob/main/transform_data.ipynb) in the root directory. 
+
+The CSV data dumps can be found in the directory [data_dump](https://github.com/Lars-Codes/NYPL/tree/main/data_dump). 
+
+
 ## Introduction
 This project implements a simple ETL pipeline using data from the [2018 Central Park Squirrel Census](https://data.cityofnewyork.us/Environment/2018-Central-Park-Squirrel-Census-Squirrel-Data/vfnx-vebw).  
 
