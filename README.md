@@ -3,14 +3,14 @@
 ## Introduction
 This project implements a simple ETL pipeline using data from the [2018 Central Park Squirrel Census](https://data.cityofnewyork.us/Environment/2018-Central-Park-Squirrel-Census-Squirrel-Data/vfnx-vebw).  
 
-Please note that the purpose of integrating the tree census data was to roughly estimate the tree the squirrel was in if it was "above ground." Of course, the squirrel may not necessarily be in a tree if it was above ground, but this may be useful data in identifying commonalities in trees squirrels use for homes. 
+Please note that the purpose of integrating the tree census data was to roughly estimate the tree the squirrel was in if it was "above ground." Of course, the squirrel may not necessarily be in a tree if it was above ground, but this may be useful data in for identifying commonalities between trees squirrels use for their homes. 
 
 That being said, the tree data used was primarily for trees on the streets of New York City, not inside of Central Park. Therefore, each squirrel is recorded as being very far from most trees in the tree dataset. However, I wanted to set up this pipeline as an example for when this data may be available in the future. 
 
 ---
 
 ## Data sources 
-- **Primary:** [2018 Central Park Squirrel Census](https://data.cityofnewyork.us/Environment/2018-Central-Park-Squirrel-Census-Squirrel-Data/vfnx-vebw). 
+- **Primary:** [2018 Central Park Squirrel Census](https://data.cityofnewyork.us/Environment/2018-Central-Park-Squirrel-Census-Squirrel-Data/vfnx-vebw)
 - **Secondary:** [2015 Central Park Squirrel Census](https://data.cityofnewyork.us/Environment/2015-Street-Tree-Census-Tree-Data/uvpi-gqnh/about_data)
 
 Both datasets were downloaded from the [NYC Open Data portal](https://opendata.cityofnewyork.us/).
@@ -23,8 +23,8 @@ Both datasets were downloaded from the [NYC Open Data portal](https://opendata.c
 |----------------|-------------|-------------|
 | **Calculate number of squirrels per hectare** | Counts number squirrels per hectare. | This data will reveal where the highest and lowest concentration of squirrels are in Central Park. | 
 | **Calculate eating elevation** | For each recorded elevation of the squirrels, count how many squirrels are eating at that elevation. | This data tells us if squirrels are more likely to be eating above ground (like in a tree) or on the ground, and if they are above ground, how high up they are. | 
-| **Date Parsing** | Converts the date field into a human-readable datetime and extracts `year`, `month`, `day`, and `weekday`. | This may make it easier for the future user to select data from a certain timerange. |  
-| **Activity Score** | Of the recorded activities, i.e. `running`, `chasing`, `climbing`, `eating`, and `foraging`, the activity score counts how many of those activities the squirrels are doing at once. | This data can tell us about overlapping squirrel activity.|
+| **Date Parsing** | Converts the date field into a human-readable datetime and extracts `year`, `month`, `day`, and `weekday`. | This may make it easier for future users to select data from a certain timerange. |  
+| **Activity Score** | Of the recorded activities, i.e. `running`, `chasing`, `climbing`, `eating`, and `foraging`, the activity score counts how many of those activities the squirrels are doing at once. | This data can tell us about simultaneous squirrel activity.|
 | **Distance Calculation** | Computes the distance in meters between each squirrel and its nearest tree using geographic coordinates. | This data pipeline can help the user identify the specific tree the squirrel was found. |
 
 ---
