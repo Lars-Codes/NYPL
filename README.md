@@ -17,7 +17,7 @@ That being said, the tree data used was primarily for trees on the streets of Ne
 
 ## Data sources 
 - **Primary:** [2018 Central Park Squirrel Census](https://data.cityofnewyork.us/Environment/2018-Central-Park-Squirrel-Census-Squirrel-Data/vfnx-vebw)
-- **Secondary:** [2015 Central Park Squirrel Census](https://data.cityofnewyork.us/Environment/2015-Street-Tree-Census-Tree-Data/uvpi-gqnh/about_data)
+- **Secondary:** [2015 Central Park Tree Census](https://data.cityofnewyork.us/Environment/2015-Street-Tree-Census-Tree-Data/uvpi-gqnh/about_data)
 
 Both datasets were downloaded from the [NYC Open Data portal](https://opendata.cityofnewyork.us/).
 
